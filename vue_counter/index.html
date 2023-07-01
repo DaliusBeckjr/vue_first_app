@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Basics</title>
+    <!-- vue js CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Bootsrap 5 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <h1>Hello, vue</h1>
+
+    <div id="app" class="container m-4">
+        <h2>{{ age }}</h2>
+        <button @click="age++" class="btn btn-primary">Increase age</button>
+        <button @click="age--" class="m-3 btn btn-primary">Decrease age</button>
+        <button @click="age = 0" class="m-3 btn btn-primary">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
