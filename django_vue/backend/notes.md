@@ -10,6 +10,10 @@ python3 -m venv djangoPy3Env
 ```
 source djangoPy3Env/bin/activate
 ```
+### Deactivate your environment:
+```
+source djangoPyEnv/bin/deactivate
+```
 ### install Django
 ```
 pip install Django
