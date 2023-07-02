@@ -10,20 +10,21 @@
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <h1> {{ title }}</h1>
     </div>
-  </header>
 
-  <main>
-    <TheWelcome />
-  </main>
 </template>
 
 <style scoped>
+h1 {
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* part of the preset  */
 header {
   line-height: 1.5;
 }
