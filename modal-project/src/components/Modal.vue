@@ -1,6 +1,7 @@
         <script>
             export default {
-                props: ['header', 'text', 'theme'],
+                // props: ['header', 'text', 'theme'],
+                props: ['theme'],
                 methods: {
                     closeModal() {
                         this.$emit('close')
@@ -11,10 +12,13 @@
 
 
 <template>
-    <div class="backdrop" @click="closeModal">
+    <!-- now if we click inside the modal it wont disappear but when click on backdrop it -->
+    <div class="backdrop" @click.self="closeModal">
         <div class="modal" :class="{ sale: theme === 'sale'}">
-            <h1>{{header}}</h1>
-            <p>{{text}}</p>
+            <slot></slot>
+            <div class="actions">
+                <slot name="links"></slot>
+            </div>
         </div>
     </div>
 </template>
@@ -50,5 +54,11 @@
     }
     .sale h1 {
         color: white;
+    }
+
+    .actions {
+        text-align: center;
+        margin: 30px 0 10px 0;
+        color: #333;
     }
 </style>
