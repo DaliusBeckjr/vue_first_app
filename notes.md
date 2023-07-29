@@ -1,0 +1,1 @@
+- delete everything in the components folder and 
