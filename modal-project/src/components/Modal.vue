@@ -24,7 +24,7 @@
 </template>
 
 <!-- using scoped in style tag means it only effects anything that is on this file in our modal -->
-<style scoped >
+<style >
     .modal {
         width: 400px;
         padding: 20px;
@@ -48,15 +48,15 @@
         padding: 0;
     }
 
-    .sale {
+    .modal .sale {
         background: crimson;
         color: white;
     }
-    .sale h1 {
+    .modal .sale h1 {
         color: white;
     }
 
-    .actions {
+    .modal .actions {
         text-align: center;
         margin: 30px 0 10px 0;
         color: #333;
