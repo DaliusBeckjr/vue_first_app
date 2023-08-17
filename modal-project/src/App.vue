@@ -52,7 +52,7 @@ export default {
     <!-- creating a name slot - need to make a template tag -->
     <template v-slot:links>
       <a href="#"> sign up</a>
-      <a href="#">more info</a>
+      <a href="#">more info</a> 
     </template>
   </Modal>
   </div>

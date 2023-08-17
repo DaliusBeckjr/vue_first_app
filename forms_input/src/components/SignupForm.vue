@@ -1,6 +1,6 @@
 <template>
     <!-- in this project we are learning about forms and submit info within a form -->
-    <form action="" @submit.prevent="handleSubmit">
+    <form @submit.prevent="handleSubmit">
         <div>
             <label>email:</label>
             <input type="email" required v-model="email">
