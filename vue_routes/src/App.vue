@@ -7,6 +7,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <div >
       <nav>
+        <!-- going to have to start lazy loading everything coz index is looking weird -->
         <RouterLink :to="{name: 'home'}">Home</RouterLink> |
         <RouterLink :to="{name: 'about'}">About</RouterLink> |
         <RouterLink :to="{name: 'jobs'}">Jobs</RouterLink>
