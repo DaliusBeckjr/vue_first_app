@@ -8,7 +8,8 @@ import { RouterLink, RouterView } from 'vue-router'
     <div >
       <nav>
         <RouterLink :to="{name: 'home'}">Home</RouterLink> |
-        <RouterLink :to="{name: 'about'}">About</RouterLink>
+        <RouterLink :to="{name: 'about'}">About</RouterLink> |
+        <RouterLink :to="{name: 'jobs'}">Jobs</RouterLink>
       </nav>
     </div>
   </header>
@@ -34,6 +35,6 @@ nav a {
 
 nav a.router-link-exact-active {
   color: whitesmoke;
-  background: orange;
+  background: purple;
 }
 </style>
