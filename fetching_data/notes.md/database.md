@@ -1,7 +1,10 @@
-Todo:
+Todo: 
+
+link for further instructions: https://github.com/typicode/json-server
+
 make a folder to carry our database json file
 ```sh
-mkdir database
+mkdir data
 ```
 |- db.json (store in database folder)
 
@@ -16,3 +19,18 @@ make our data  we can also add more information as an example
     "blogs": []
 }
 ```
+
+download json-server
+```sh
+--------------------------------------
+mac:      | sudo npm i -g json-server |
+--------------------------------------
+windows:  | npm i -g json-server      |
+--------------------------------------
+```
+
+create another terminal and start the json-server
+```sh
+json-server --watch (database folder)/db.json
+```
+
